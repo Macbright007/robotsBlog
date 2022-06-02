@@ -1,4 +1,4 @@
-const Data = [
+export const Records = [
     {
         id: 1,
         author_name: 'macbright',
@@ -15,19 +15,19 @@ const Data = [
     },
     {
         id: 3,
-        author_name: 'macbright',
+        author_name: 'Tayor',
         body: 'forever young, I want to be forever young, do you really want to leave forever and ever and ever.',
         comment: true
     },
     {
         id: 1,
-        author_name: 'macbright',
+        author_name: 'Micheal',
         body: 'forever young, I want to be forever young, do you really want to leave forever and ever and ever.',
         comment: true
     },
     {
         id: 1,
-        author_name: 'macbright',
+        author_name: 'Ponmile',
         body: 'forever young, I want to be forever young, do you really want to leave forever and ever and ever.',
         comment: true
     },
