@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
     return (
-        <nav className='flex justify-around border-4 border-r-0 border-l-0 border-t-0 rounded-3xl p-3 w-full max-w-screen-lg mx-auto'>
+        <nav className='flex justify-around border-4 border-slate-400 border-r-0 border-l-0 border-t-0 rounded-3xl p-3 w-full max-w-screen-md mx-auto'>
             <div className='flex mt-2'>
                 <ImBlog className='animate-bounce text-slate-600 text-2xl' />
                 <h3 className='text-slate-600 text-2xl capitalize font-extrabold'>MacBlog</h3>
