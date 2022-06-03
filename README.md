@@ -2,7 +2,7 @@
 
 ## Task
 
-Create a blog that can create, post content and view content.
+Create a blog that can create, post content and view commented post.
 
 
 ### Link
