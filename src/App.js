@@ -1,4 +1,3 @@
-import './App.css';
 import Navbar from './components/Navbar';
 import Blog from './components/Blog';
 import Comment from './components/Comment'
@@ -12,12 +11,12 @@ import {
 function App() {
   return (
     <Router>
-    <div className="App">
+    <div>
       <Navbar />
       <Routes>
         <Route path="/" element={<Blog />} />
-        <Route path="/createPost" element={<CreatePost />} />
-        <Route path="/comment:Id" element={<Comment />} />
+        <Route path="/create-post" element={<CreatePost />} />
+        <Route path="/comment/:id" element={<Comment />} />
       </Routes>
     </div>
     </Router>

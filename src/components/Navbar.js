@@ -1,4 +1,3 @@
-import React from 'react'
 import { ImBlog } from 'react-icons/im'
 import { Link } from 'react-router-dom'
 
@@ -11,7 +10,7 @@ const Navbar = () => {
             </div>
             <div className='mt-3'>
                 <Link to="/" className='text-slate-500 mx-7 text-lg capitalize font-extrabold tracking-wide hover:underline cursor-pointer animate-pulse'>Blog</Link>
-                <Link to="/createPost/" className='text-slate-500 mx-7 text-lg capitalize font-extrabold tracking-wide hover:underline cursor-pointer animate-pulse'>CreatePost</Link>
+                <Link to="/create-post/" className='text-slate-500 mx-7 text-lg capitalize font-extrabold tracking-wide hover:underline cursor-pointer animate-pulse'>CreatePost</Link>
             </div>
             {/* <a className='text-white mx-7 text-lg capitalize font-semibold font-mono tracking-wide hover:underline cursor-pointer animate-pulse'>Comment</a> */}
         </nav>
