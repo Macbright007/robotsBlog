@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar';
 import Blog from './components/Blog';
-import Comment from './components/Comment'
+import SinglePost from './components/SinglePost'
 import CreatePost from './components/CreatePost';
 import {
   Routes,
@@ -16,7 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Blog />} />
         <Route path="/create-post" element={<CreatePost />} />
-        <Route path="/comment/:id" element={<Comment />} />
+        <Route path="/post/:id" element={<SinglePost />} />
       </Routes>
     </div>
     </Router>
