@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { URL } from './Blog';
 
 import Axios from 'axios';
 
@@ -14,7 +15,7 @@ const Comments = () => {
   const handleClick = async (e) => {
     e.preventDefault();
     try {
-      const result = await Axios.post('https://blogpostapi1.herokuapp.com/comment', {
+      const result = await Axios.post(`${URL}comment/`, {
         content,
         post: params.id,
       });
@@ -35,10 +36,10 @@ const Comments = () => {
         //combinning all the request together with a promise
         const [post, comments] = await Promise.all([
           Axios.get(
-            `https://blogpostapi1.herokuapp.com/${params.id}`
+            `${URL}${params.id}`
           ),
           Axios.get(
-            `https://blogpostapi1.herokuapp.com/comment/all_comments/${params.id}`
+            `${URL}comment/all_comments/${params.id}`
           ),
         ]);
         setPost(post.data.data[0])
