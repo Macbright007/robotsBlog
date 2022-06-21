@@ -38,7 +38,7 @@ const CreatePost = () => {
   return (
     <form className='max-w-xl mx-auto mt-7' onSubmit={handleSubmit}>
       <div className="py-2">
-        <label for="authorname" className="text-xs text-gray-600 font-semibold">
+        <label htmlFor="authorname" className="text-xs text-gray-600 font-semibold">
           AuthorName:
         </label>
         <br />
@@ -52,7 +52,7 @@ const CreatePost = () => {
         />
       </div>
       <div className="py-2">
-        <label for="title" className="text-xs text-gray-600 font-semibold">
+        <label htmlFor="title" className="text-xs text-gray-600 font-semibold">
           Title:
         </label>
         <br />
@@ -66,7 +66,7 @@ const CreatePost = () => {
         />
       </div>
       <div className="py-2">
-        <label for="body" className="text-xs text-gray-600 font-semibold">
+        <label htmlFor="body" className="text-xs text-gray-600 font-semibold">
           Body:
         </label>
         <br />
